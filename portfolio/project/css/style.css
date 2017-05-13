@@ -1,0 +1,16 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #BCBBBB
+}
+
+hr {
+    border: none;
+    height: 3px;
+    /* Set the hr color */
+    color: #BCBBBB; /* old IE */
+    background-color: #BCBBBB; /* Modern Browsers */
+}
+
+text-thin {
+  font-size: 1px;
+}
