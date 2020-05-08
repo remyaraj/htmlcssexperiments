@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+</head>
+<body>
+<h1>Register</h1>
+<form>
+	<div>
+		<label for="fName"><strong>First Name:</strong></label>
+		<input id="fName" type="text" name="fName" placeholder="John" required>
+
+		<label>
+			<strong>Last Name:</strong>
+			<input type="text" name="lName" placeholder="Smith" required>
+		</label>	
+	</div>
+	
+	<div>
+		<label for="m"><strong>Male</strong></label>
+		<input id="m" type="radio" name="gender" value="M">
+		<label for="f"><strong>Female</strong></label>
+		<input id="f" type="radio" name="gender" value="F">
+		<label for="o"><strong>Other</strong></label>
+		<input id="o" type="radio" name="gender" value="O">
+	</div>
+	
+	<div>
+		<label for="email"><strong>Email:</strong></label>
+		<input type="email" name="email" id="email" placeholder="your email" required>
+		<label>
+			<strong>Password:</strong>
+			<input type="password" name="password" required minlength="5" maxlength="8">
+		</label>
+
+	</div>
+	<div>
+		<label id="dob"><strong>Birthday:</strong>
+			<select name="dob.month" id="month">
+				<option value= "">Month</option>
+				<option value="1">Jan</option>
+				<option value="2">Feb</option>
+			</select>
+			<select name="dob.day" id="day">
+				<option value="">Day</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+			</select>
+			<select name="dob.year" id="year">
+				<option value="">Year</option> 
+				<option value="1988">1988</option>
+				<option value="1989">1989</option>
+			</select>
+		</label>
+	</div>
+
+	<div><strong>I agree to the terms and condition</strong> <input type="checkbox" name="agree" required></div>
+	<input type="submit" name="submit">
+</form>
+</body>
+</html>
